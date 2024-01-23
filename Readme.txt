@@ -1,6 +1,4 @@
-Thanks for downloading this theme!
-
-Theme Name: DevFolio
-Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-Author: BootstrapMade.com
-Author URL: https://bootstrapmade.com
+This is my work space, it is used to showcase my skills as per upto-date.
+It acts kind of like my resume.
+incase of any inquiries you can contact me at lewisanyanje@gmail.com
+Enjoy :)
