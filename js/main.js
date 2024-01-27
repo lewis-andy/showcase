@@ -115,43 +115,15 @@
 	});
 
 })(jQuery);
+ // Replace "1234567890" with the actual phone number
+    var phoneNumber = "+254740024089";
 
-<
-    function sendMessage() {
-        // Fetch values from the form
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var subject = document.getElementById("subject").value;
-        var message = document.getElementById("message").value;
+    // Replace the message with your desired text
+    var message = "Hello I viewed your portfolio and am interested in your work. I would like to inquire more about it. Thank you!";
 
-        // Assuming you have a server-side script (like PHP) to handle the email sending
-        // Modify the URL to the actual path of your server-side script
-        var url = "../server/sever.js";
+    // Encode the message
+    var encodedMessage = encodeURIComponent(message);
 
-        // Prepare data to send to the server
-        var data = {
-            name: name,
-            email: email,
-            subject: subject,
-            message: message
-        };
-
-        // Use Fetch API to send the data to the server
-        fetch(url, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        })
-        .then(response => response.json())
-        .then(data => {
-            // Handle the response from the server
-            console.log('Success:', data);
-            // You can add further actions here if needed
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-        });
-    }
+    // Create the WhatsApp link
+    var whatsappLink = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
 
