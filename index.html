@@ -683,9 +683,13 @@
                     </h5>
                   </div>
                   <div>
-                      <form action="" method="post" role="form" class="contactForm">
+                      <form action="https://api.web3forms.com/submit" method="POST"class="contactForm">
                       <div id="sendmessage">Your message has been sent. Thank you!</div>
                       <div id="errormessage"></div>
+
+
+                       <input type="hidden" name="access_key" value="f8bc4a25-6b65-46ff-ba2f-f9295c98e169">
+
                       <div class="row">
                         <div class="col-md-12 mb-3">
                           <div class="form-group">
@@ -712,10 +716,11 @@
                           </div>
                         </div>
                         <div class="col-md-12">
-                          <button type="button" class="button button-a button-big button-rouded" onclick="sendMessage()">Send message </button>
+                          <button type="submit" class="button button-a button-big button-rouded" onclick="sendMessage()">Send message </button>
                         </div>
+
                         <div id="sendmessage" style="display: none;">Your message has been sent. Thank you!</div>
-<div id="errormessage" style="display: none;"></div>
+                        <div id="errormessage" style="display: none;"></div>
 
                       </div>
                     </form>
