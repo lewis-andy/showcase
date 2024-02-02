@@ -855,7 +855,11 @@ a:hover {
 /*======================================
 //--//-->   BLOG
 ======================================*/
-
+.author-test img {
+    border-radius: 50%;
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+  }
 .card-blog .card-body {
   position: relative;
 }
