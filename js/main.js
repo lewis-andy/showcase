@@ -127,3 +127,38 @@
     // Create the WhatsApp link
     var whatsappLink = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
 
+	function sendMessage() {
+    // Your form validation and submission logic here
+
+    // For demonstration purposes, assuming the form is always valid and submission is successful
+    // You can replace this with your actual form validation and submission logic
+    var form = document.querySelector('.contactForm');
+    var sendmessage = document.getElementById('sendmessage');
+    var errormessage = document.getElementById('errormessage');
+
+    // Simulate form submission success
+    // You should replace this with actual form submission logic and handle success/error accordingly
+    var success = true;
+
+    if (success) {
+      // Show success message
+      sendmessage.style.display = 'block';
+      errormessage.style.display = 'none';
+
+      // Reload the page after 3 seconds (you can adjust the delay)
+      setTimeout(function () {
+        location.reload();
+      }, 3000);
+
+      // Prevent the form from submitting (prevents default form behavior)
+      return false;
+    } else {
+      // Show error message
+      sendmessage.style.display = 'none';
+      errormessage.style.display = 'block';
+
+      // Allow the form to submit if there's an error
+      return true;
+    }
+  }
+
