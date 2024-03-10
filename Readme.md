@@ -1,9 +1,9 @@
-# [Lewis]'s Portfolio
+# Lewis's Portfolio
 
 ## Introduction
 Welcome to my portfolio! I am a 2nd-year Computer Science student with a passion for technology and software development. In this portfolio, you will find projects that showcase my skills and experiences in various programming languages and technologies.
 
-## you can preview this link at
+## you can preview this site at
 [www.lewisandanje.com](https://lewis-andy.github.io/showcase/)
 
 ## Skills
